@@ -1,8 +1,11 @@
+import { Navbar, Appform } from './components'
+
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold">
-      Hello, My name is Umar Muhammad Aminu!
-    </h1>
+    <div className="App">
+      <Navbar />
+      <Appform />
+    </div>
   )
 }
 
