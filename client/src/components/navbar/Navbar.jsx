@@ -4,6 +4,7 @@ import './navbar.css';
 import logo from '../../assets/skoolbod.png'
 
 const Menu = ()=>(
+  
   <div className='navbar-links_container'>
     <div className='navbar-link'>
       <p><a href="#home">Home</a></p>
@@ -51,10 +52,6 @@ const Navbar = () => {
             {console.log(toggleMenu)}
             <div className='navbar-menu_container-links'>
               <Menu />
-              <div className='navbar-menu_container-links-sign'>
-                <p>Sign in</p>
-                <button type='button'>Sign up</button>
-              </div>
             </div>
           </div>
         )}
