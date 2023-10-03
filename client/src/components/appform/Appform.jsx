@@ -27,15 +27,15 @@ function Appform() {
   
 
   return (
-    <div className="application-form flex flex-col border-solid border-2 shadow-2xl">
+    <div className="application-form flex flex-col border-solid border-2 shadow-2xl p-10">
       <div className="form-header flex flex-col align-middle text-center">
-        <h2 className="text-base font-semibold leading-7 text-gray-900">Application Form</h2>
-        <p className='my-12 mt-0'>Lorem Ipsun Tapsun Elajare ffwenj ed rwejdq  c ewreqwe veropv dsjiojpk vwjeijnbqdw sewrjivwn assdfjiw </p>
+        <h2 className="text-4xl font-semibold leading-7 text-green-900 mb-2">Application Form</h2>
+        <p className='my-12 mt-0 text-sm'>Lorem Ipsun Tapsun Elajare ffwenj ed rwejdq  c ewreqwe veropv dsjiojpk vwjeijnbqdw sewrjivwn assdfjiw </p>
         <p className='te'>Fill In your Details to Continue</p>
       </div>
       <div className="student-info p-8">
         <h2 className='text-left'>Student Information</h2>
-        <div className='grid gap-6 grid-cols-3 border-t-2 border-black pt-4'>
+        <div className='grid gap-6 lg:grid-cols-3 border-t-2 border-black pt-4'>
           <label>
             Name
             <input type="text" name="name" onChange={(e)=>changeValues(e.target.name, e.target.value)}  className="w-full rounded-md border-0 py-1.5 pl-2 pr-20 text-gray-900 ring-1 ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6" placeholder="Name"/>
@@ -115,7 +115,7 @@ function Appform() {
       </div>
       <div className='guardian-info p-8'>
         <h2>Guardian Information</h2>
-        <div className='grid gap-6 grid-cols-3 border-t-2 border-black pt-4'>
+        <div className='grid gap-6 md:grid-cols-3 border-t-2 border-black pt-4'>
           <label>
               Name
               <input type="text" name="guardian_name" onChange={(e)=>changeValues(e.target.name, e.target.value)} className="w-full rounded-md border-0 py-1.5 pl-2 pr-20 text-gray-900 ring-1 ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6" placeholder="Name"/>
