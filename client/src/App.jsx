@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App font-mi">
     <Router>
       <Navbar />
       <Routes>

@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      'mi': ['Montserrat', 'sans-serif']
+    }
   },
   plugins: [],
 }
