@@ -1,62 +1,45 @@
-import  { useState } from 'react';
-import {  RiCloseLine, RiMenu3Line } from 'react-icons/ri';
 import './navbar.css';
-import logo from '../../assets/skoolbod.png'
+import { logo, email, facebook, insta, phone, x }  from '../../assets'
 
-const Menu = ()=>(
-  
-  <div className='navbar-links_container'>
-    <div className='navbar-link'>
-      <p><a href="#home">Home</a></p>
-      <div className='line'></div>
-    </div>
-    <div className='navbar-link'>
-      <p><a href="#home">Administration</a></p>
-      <div className='line'></div>
-    </div>
-    <div className='navbar-link'>
-      <p><a href="#home">Admission</a></p>
-      <div className='line'></div>
-    </div>
-    <div className='navbar-link'>
-      <p><a href="#home">Fees</a></p>
-      <div className='line'></div>
-    </div>
-    <div className='navbar-link'>
-      <p><a href="#home">Student Affairs</a></p>
-      <div className='line'></div>
-    </div>
-    </div>
-)
 
-const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+function Navbar() {
   return (
-    <div className='navbar'>
-      <div className='navbar-links'>
-        <div className='navbar-links_logo'>
-        <img src={logo}/>
+    <div className='fixed top-0 border-b-2 w-[100%] h-24 flex items-center pl-32 bg-slate-100'>
+      <div className='pl-8 mr-32'>
+        <img src={logo} alt='skoolbod logo'/>
+      </div>
+      <div className='flex items-center space-x-2 bg-[#00c274] p-2 rounded-full mr-32'>
+        <div className=' bg-gray-200 p-2 rounded-lg hover:bg-[#0047ab]'>
+          <a href='#facebook'>
+            <img src={facebook} alt='facebook' className='w-3.5'/>
+          </a>
         </div>
-         <Menu />
+        <div className=' bg-gray-200 p-2 rounded-lg hover:bg-[#0047ab]'>
+          <a href='#insta'>
+            <img src={insta} alt='insta' className='w-3.5'/>
+          </a>
+        </div><div className=' bg-gray-200 p-2 rounded-lg hover:bg-[#0047ab]'>
+        <a href='#facebook'>
+          <img src={x} alt='x' className='w-3.5'/>
+        </a>
       </div>
-      <div className='navbar-sign'>
-        <p>Sign in</p>
-        <button type='button'>Sign up</button>
       </div>
-      <div className='navbar-menu'>
-        {toggleMenu 
-          ? <RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(false)}/>
-          : <RiMenu3Line color='#fff' size={27} onClick={() => setToggleMenu(true)}/>}
-        {toggleMenu && (
-          <div className='navbar-menu_container scale-up-center'>
-            {console.log(toggleMenu)}
-            <div className='navbar-menu_container-links'>
-              <Menu />
-            </div>
-          </div>
-        )}
+      <div className='text-xl flex '>
+        <div className='flex flex-row items-center space-x-2 border-r-2 pr-12 '>
+          <a href='#080456363456667'>
+            <img src={phone} alt='x' className='w-10 hover:w-16'/>
+          </a>
+          <h2>080123456789</h2>
+        </div>
+        <div className='flex flex-row items-center space-x-2  pl-12 '>
+          <a href='#080456363456667'>
+            <img src={email} alt='x' className='w-10 hover:w-16'/>
+          </a>
+          <h2>school@schoool.com</h2>
+        </div>
       </div>
     </div>
+
   )
 }
 
