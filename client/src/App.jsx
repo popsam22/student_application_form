@@ -1,4 +1,4 @@
-import { Navbar, Appform, Payment } from './components'
+import { Navbar, Appform, Payment, Footer } from './components'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 const App = () => {
@@ -10,6 +10,7 @@ const App = () => {
         <Route index path="/" element={<Appform />} />
         <Route path='/payment' element={<Payment />}/>
       </Routes>
+      <Footer />
     </Router>
     </div>
   )
