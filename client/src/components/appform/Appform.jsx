@@ -5,7 +5,11 @@ import { useNavigate } from 'react-router-dom'
 
 function Appform() {
   const navigate = useNavigate() 
+<<<<<<< HEAD
   const [formData, setFormData] = useState({
+=======
+  const [FormData, setFormData] = useState({
+>>>>>>> f73f735df7d6fdffdffca18cb3e7692617f347c0
     name: '', dob:'', gender:'',nationality:'',
     state:'', religion:'', phone:'', email:'',
     disability:'', class:'', prev_school:'',
@@ -15,12 +19,20 @@ function Appform() {
 
 
   const changeValues = (name, value)=> {
+<<<<<<< HEAD
     setFormData({...formData, [name]:value})
+=======
+    setFormData({...FormData, [name]:value})
+>>>>>>> f73f735df7d6fdffdffca18cb3e7692617f347c0
   }
 
   const submitApplication = () => {
     //submit to backend
+<<<<<<< HEAD
     console.log(formData)
+=======
+    console.log(FormData)
+>>>>>>> f73f735df7d6fdffdffca18cb3e7692617f347c0
     navigate('/payment')
   }
 
