@@ -5,11 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 function Appform() {
   const navigate = useNavigate() 
-<<<<<<< HEAD
   const [formData, setFormData] = useState({
-=======
-  const [FormData, setFormData] = useState({
->>>>>>> f73f735df7d6fdffdffca18cb3e7692617f347c0
     name: '', dob:'', gender:'',nationality:'',
     state:'', religion:'', phone:'', email:'',
     disability:'', class:'', prev_school:'',
@@ -19,20 +15,12 @@ function Appform() {
 
 
   const changeValues = (name, value)=> {
-<<<<<<< HEAD
     setFormData({...formData, [name]:value})
-=======
-    setFormData({...FormData, [name]:value})
->>>>>>> f73f735df7d6fdffdffca18cb3e7692617f347c0
   }
 
   const submitApplication = () => {
     //submit to backend
-<<<<<<< HEAD
     console.log(formData)
-=======
-    console.log(FormData)
->>>>>>> f73f735df7d6fdffdffca18cb3e7692617f347c0
     navigate('/payment')
   }
 
@@ -40,7 +28,7 @@ function Appform() {
     <div className="application-form flex flex-col border-solid border-2 shadow-2xl p-10 mt-32 mb-24">
       <div className="form-header flex flex-col align-middle text-center">
         <h2 className="text-4xl font-semibold leading-7 text-green-900 mb-2">Application Form</h2>
-        <p className='my-12 mt-0 text-sm'>Lorem Ipsun Tapsun Elajare ffwenj ed rwejdq  c ewreqwe veropv dsjiojpk vwjeijnbqdw sewrjivwn assdfjiw </p>
+        <p className='my-12 mt-0 text-sm'>To Simplify Learning Process For the Leaders of Tomorrow</p>
         <p className='te'>Fill In your Details to Continue</p>
       </div>
       <div className="student-info p-8">
@@ -118,7 +106,7 @@ function Appform() {
             <input type="text" name="prev_school" onChange={(e)=>changeValues(e.target.name, e.target.value)} className="w-full rounded-md border-0 py-1.5 pl-2 pr-20 text-gray-900 ring-1 ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"/>
           </label>
           <label>
-            School Address
+            Last School Address
             <input type="address" name="school_address" onChange={(e)=>changeValues(e.target.name, e.target.value)} className="w-full rounded-md border-0 py-1.5 pl-2 pr-20 text-gray-900 ring-1 ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"/>
           </label>
         </div>

@@ -26,13 +26,13 @@ function Navbar() {
       </div>
       <div className='text-xl flex '>
         <div className='flex flex-row items-center space-x-2 border-r-2 pr-12 '>
-          <a href='#080456363456667'>
+          <a href='#phone'>
             <img src={phone} alt='x' className='w-10 hover:w-16'/>
           </a>
-          <h2>080123456789</h2>
+          <h2>+234 904 000 1099</h2>
         </div>
         <div className='flex flex-row items-center space-x-2  pl-12 '>
-          <a href='#080456363456667'>
+          <a href='#email'>
             <img src={email} alt='x' className='w-10 hover:w-16'/>
           </a>
           <h2>school@schoool.com</h2>
