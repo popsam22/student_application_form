@@ -25,7 +25,7 @@ function Appform() {
   }
 
   return (
-    <div className="application-form flex flex-col border-solid border-2 shadow-2xl p-10 mt-32 mb-24">
+    <div className="application-form flex flex-col border-solid border-2 shadow-2xl p-10 mt-32 mb-24 ">
       <div className="form-header flex flex-col align-middle text-center">
         <h2 className="text-4xl font-semibold leading-7 text-green-900 mb-2">Application Form</h2>
         <p className='my-12 mt-0 text-sm'>To Simplify Learning Process For the Leaders of Tomorrow</p>

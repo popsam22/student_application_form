@@ -20,7 +20,7 @@ function Navbar() {
           </a>
         </div><div className=' bg-gray-200 p-2 rounded-lg hover:bg-[#0047ab]'>
         <a href='#facebook'>
-          <img src={x} alt='x' className='w-6'/>
+          <img src={x} alt='x' className='w-6 hover:w-12'/>
         </a>
       </div>
       </div>
@@ -35,7 +35,7 @@ function Navbar() {
           <a href='#email'>
             <img src={email} alt='x' className='w-10 hover:w-16'/>
           </a>
-          <h2>school@schoool.com</h2>
+          <h2>info@skoolbod.com</h2>
         </div>
       </div>
     </div>
