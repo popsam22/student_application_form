@@ -1,8 +1,18 @@
+import { Navbar, Appform, Payment, Footer } from './components'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold">
-      Hello, My name is Umar Muhammad Aminu!
-    </h1>
+    <div className="App font-mi">
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route index path="/" element={<Appform />} />
+        <Route path='/payment' element={<Payment />}/>
+      </Routes>
+      <Footer />
+    </Router>
+    </div>
   )
 }
 
