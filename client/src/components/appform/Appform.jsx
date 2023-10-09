@@ -25,9 +25,9 @@ function Appform() {
   }
 
   return (
-    <div className="application-form flex flex-col border-solid border-2 shadow-2xl p-10 mt-32 mb-24 ">
+    <div className="application-form flex flex-col border-solid border-2 shadow-2xl p-2 pt-10 mt-20 mb-24 sm:p-10 xl:mt-32">
       <div className="form-header flex flex-col align-middle text-center">
-        <h2 className="text-4xl font-semibold leading-7 text-green-900 mb-2">Application Form</h2>
+        <h2 className="text-4xl font-semibold leading-12 text-green-900 mb-2">Application Form</h2>
         <p className='my-12 mt-0 text-sm'>To Simplify Learning Process For the Leaders of Tomorrow</p>
         <p className='te'>Fill In your Details to Continue</p>
       </div>
@@ -129,7 +129,7 @@ function Appform() {
         </div>
       </div>
       <div className='flex items-end '>
-        <button onClick={submitApplication} className='w-32 h-12 border-2 ml-[80%] bg-[#0047ab] shadow-slate-400 hover:bg-indigo-800 rounded-2xl text-white'>Submit</button>
+        <button onClick={submitApplication} className='w-32 h-12 border-2 ml-[50%] bg-[#0047ab] shadow-slate-400 hover:bg-indigo-800 rounded-2xl text-white sm:ml-[80%]'>Submit</button>
       </div>
     </div>
         )
