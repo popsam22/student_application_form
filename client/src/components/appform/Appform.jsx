@@ -1,10 +1,13 @@
-import './appform.css'
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom'
+import AppContext from "../../context/AppContext"
+
 
 
 function Appform() {
-  const navigate = useNavigate() 
+  // console.log(window.location.hostname)
+  let { submitApplication } = useContext(AppContext)
+
   const [formData, setFormData] = useState({
     name: '', dob:'', gender:'',nationality:'',
     state:'', religion:'', phone:'', email:'',
@@ -18,10 +21,9 @@ function Appform() {
     setFormData({...formData, [name]:value})
   }
 
-  const submitApplication = () => {
-    //submit to backend
-    console.log(formData)
-    navigate('/payment')
+  const submitApp = () => {
+    submitApplication(formData)
+    //  navigate('/payment')
   }
 
   return (
@@ -129,7 +131,7 @@ function Appform() {
         </div>
       </div>
       <div className='flex items-end '>
-        <button onClick={submitApplication} className='w-32 h-12 border-2 ml-[50%] bg-[#0047ab] shadow-slate-400 hover:bg-indigo-800 rounded-2xl text-white sm:ml-[80%]'>Submit</button>
+        <button onClick={submitApp} className='w-32 h-12 border-2 ml-[50%] bg-[#0047ab] shadow-slate-400 hover:bg-indigo-800 rounded-2xl text-white sm:ml-[80%]'>Submit</button>
       </div>
     </div>
         )
