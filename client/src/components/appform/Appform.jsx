@@ -130,8 +130,9 @@ function Appform() {
           </label>
         </div>
       </div>
-      <div className='flex items-end '>
-        <button onClick={submitApp} className='w-32 h-12 border-2 ml-[50%] bg-[#0047ab] shadow-slate-400 hover:bg-indigo-800 rounded-2xl text-white sm:ml-[80%]'>Submit</button>
+      <div className='flex items-end flex-col p-8 '>
+        <h3 >Application Fee: &#8358;2000</h3>
+        <button onClick={submitApp} className=' mt-4 w-32 h-12 border-2 ml-[50%] bg-[#0047ab] shadow-slate-400 hover:bg-indigo-800 rounded-2xl text-white sm:ml-[80%]'>Pay Now</button>
       </div>
     </div>
         )

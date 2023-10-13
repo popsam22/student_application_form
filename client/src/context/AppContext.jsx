@@ -31,9 +31,10 @@ export const AppProvider = ({children}) => {
                 body:JSON.stringify({ name, email, amount:2000 })
             })
             const json = await paymentRes.json()
+            console.log(paymentRes)
             const paymentData = json.data
             const authorization_url = paymentData.data.authorization_url
-            window.open(authorization_url, '_blank', 'noopener,noreferrer')
+            window.open(authorization_url, "_self")
             
         }else{
             alert('Problem occurs!!')
