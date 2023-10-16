@@ -1,5 +1,4 @@
-import './navbar.css';
-import { logo, email, facebook, insta, phone, x, school_logo }  from '../../assets'
+import { logo, email, facebook, insta, phone, x, school_logo }  from '../assets'
 import { useState } from 'react';
 import { RiMenuLine, RiCloseLine, RiMenu3Line } from 'react-icons/ri';
 

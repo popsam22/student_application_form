@@ -8,6 +8,7 @@ const swagger = require('swagger-ui-express')
 //route
 const swaggerDocs = require('./utils/swagger')
 const studentRoutes = require('./routes/studentsForm')
+const studentDRoutes = require('./routes/studentDetails')
 const paymentRoutes = require('./routes/payments')
 
 const app = express()
@@ -34,4 +35,5 @@ app.use('/docs/api', swagger.serve)
 app.use('/docs/api', swagger.setup(swaggerDocs))
 
 app.use('/api/v1/student', studentRoutes)
+app.use('/api/v2/student', studentDRoutes)
 app.use('/api/v1/payment', paymentRoutes)

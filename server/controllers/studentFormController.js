@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const StudentForm = require("../models/studentFormModel");
 
-console.log('workinnnnnnn')
 const createStudentApplication = async (req, res) => {
   try {
     const { name, email, gender, nationality } = req.body;
