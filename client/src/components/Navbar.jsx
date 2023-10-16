@@ -1,6 +1,6 @@
-import { logo, email, facebook, insta, phone, x, school_logo }  from '../assets'
+import { email, facebook, insta, phone, x, school_logo }  from '../assets'
 import { useState } from 'react';
-import { RiMenuLine, RiCloseLine, RiMenu3Line } from 'react-icons/ri';
+import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 
 function Navbar() {
   const Menu = ()=>(
