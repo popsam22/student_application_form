@@ -4,7 +4,7 @@ import { useState } from "react";
 function SchoolRegister() {
   const [selectedFile, setSelectedFile] = useState('');
   return (
-    <div className="border-2 rounded-md mx-5  my-5 py-5 px-3 bg-slate-50 opacity-75 xl:p-8 mt-36 xl:w-2/6 xl:ml-[33.33%] mb-12">
+    <div className="border-2 rounded-md mx-5  my-5 py-5 px-3 bg-slate-50  xl:p-8 mt-36 xl:w-2/6 xl:ml-[33.33%] mb-12">
       <div>
         <h2 className='text-center text-2xl font-black'>School Register</h2>
       </div>
