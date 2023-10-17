@@ -45,7 +45,7 @@ export const AppProvider = ({children}) => {
         e.preventDefault()
         console.log(e.target.email.value, e.target.password.value)
 
-        // let response = await fetch(base_url +'/login/', {
+        // let response = await fetch(base_url +'/admin-login/', {
         //     method:'POST',
         //     headers:{
         //         'Content-Type':'application/json'
@@ -57,7 +57,7 @@ export const AppProvider = ({children}) => {
         // if(response.status === 200){
             
         // }else{
-        //     alert('Invalid Username of Password')
+        //     alert('Invalid Username or Password')
         // }
     }
 
