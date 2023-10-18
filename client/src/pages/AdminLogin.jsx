@@ -6,7 +6,7 @@ import AppContext from "../context/AppContext"
 
 
 export default function AdminLogin() {
-  let { loginUser } = useContext(AppContext)
+  let { loginUser, isLogin } = useContext(AppContext)
 
   return (
     <div className="shadow border-2 rounded-md mx-5  my-5 py-5 px-3 bg-slate-50 opacity-75 xl:p-8 mt-36 xl:w-2/6 xl:ml-[33.33%]">
@@ -37,6 +37,7 @@ export default function AdminLogin() {
 
         </div>
         <button type='submit' className="bg-[#198754] p-2 rounded-lg mt-6 text-lg text-white shadow-xl ">Login</button>
+        <h3 style={{display:isLogin? 'flex':'none'}} className=''>Loadind...</h3>
         <a className='text-center mt-6' href="/register">Register School</a>
       </form>
 

@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import AppContext from "../context/AppContext";
 
 
 function SchoolRegister() {
-  const [selectedFile, setSelectedFile] = useState('');
+  let { registerSchool, isRegister } = useContext(AppContext);
+
   return (
-    <div className="border-2 rounded-md mx-5  my-5 py-5 px-3 bg-slate-50  xl:p-8 mt-36 xl:w-2/6 xl:ml-[33.33%] mb-12">
+    <div className="border-2 rounded-md mx-5  my-5 py-5 px-3 bg-slate-50 gs xl:p-8 mt-36 xl:w-2/6 xl:ml-[33.33%] mb-12">
       <div>
         <h2 className='text-center text-2xl font-black'>School Register</h2>
       </div>
-      <form className="flex flex-col mt-8">
+      <form onSubmit={registerSchool} className="flex flex-col mt-8">
         <label className='font-medium'>School Name
           <input
             type="text"
@@ -22,7 +24,7 @@ function SchoolRegister() {
             type="address"
             className="border-[#4d4c4c] p-1 border-b-2 w-[100%] pl-2 mb-4"
             placeholder="School Address"
-            name="address"
+            name="school_address"
           />
         <label className='font-medium mt-4'>Email
           <input
@@ -45,11 +47,10 @@ function SchoolRegister() {
             type="file"
             className="p-1 w-[100%] pl-2 mb-4"
             name="form_template"
-            value={selectedFile}
-            onChange={(e) => setSelectedFile(e.target.files[0])}
           />
         </label>
         <button type='submit' className="bg-[#198754] p-2 rounded-lg mt-6 text-lg text-white ">Register</button>
+        <h2 style={{display:isRegister? 'flex':'none'}} >Loading</h2>
       </form>
 
     </div>
