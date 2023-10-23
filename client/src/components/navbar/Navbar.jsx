@@ -1,5 +1,5 @@
 import './navbar.css';
-import { logo, email, facebook, insta, phone, x, school_logo }  from '../../assets'
+import { email, facebook, insta, phone, x, school_logo }  from '../../assets'
 
 
 function Navbar() {
