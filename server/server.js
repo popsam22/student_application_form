@@ -18,7 +18,6 @@ app.use(express.json())
 //middleware
 app.use(cors());
 
-
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
