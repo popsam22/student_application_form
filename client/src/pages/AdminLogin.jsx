@@ -37,7 +37,7 @@ export default function AdminLogin() {
 
         </div>
         <button type='submit' className="bg-[#198754] p-2 rounded-lg mt-6 text-lg text-white shadow-xl ">Login</button>
-        <h3 style={{display:isLogin? 'flex':'none'}} className=''>Loadind...</h3>
+        <h3 style={{display:isLogin? 'flex':'none'}} className=''>Loading...</h3>
         <a className='text-center mt-6' href="/register">Register School</a>
       </form>
 

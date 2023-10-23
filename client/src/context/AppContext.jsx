@@ -20,10 +20,10 @@ export const AppProvider = ({children}) => {
     const [isLogin, setIsLogin] = useState(false)
     const [isRegister, setIsRegister] = useState(false)
 
-    let submitApplication = async ( userData )=> {
+    const submitApplication = async ( userData )=> {
         const { name, email, nationality, gender } = userData
 
-        let response = await fetch(base_url +'student/submit-application', {
+        const response = await fetch(base_url +'student/submit-application', {
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -33,7 +33,7 @@ export const AppProvider = ({children}) => {
 
         if(response.status === 201){
             // navigate('/login')
-            let paymentRes = await fetch(base_url +'admin/payment', {
+            const paymentRes = await fetch(base_url +'admin/payment', {
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
@@ -52,11 +52,9 @@ export const AppProvider = ({children}) => {
     }
 
 
-    let loginUser = async (e)=> {
-        setIsLogin(true)
-        e.preventDefault()
-        console.log(e.target.email.value, e.target.password.value)
-
+    const loginUser = async (e)=> {
+        // setIsLogin(true)
+        // e.preventDefault()
         try {
             const response = await api.post(
                 'admin/admin-login',
@@ -74,10 +72,9 @@ export const AppProvider = ({children}) => {
             setIsLogin(false);
           }
           
-        
     }
 
-    let registerSchool = async (e) => {
+    const registerSchool = async (e) => {
         setIsRegister(true)
         e.preventDefault()
         const schoolData = new FormData()
@@ -105,7 +102,7 @@ export const AppProvider = ({children}) => {
     }
 
 
-    let contextData = {
+    const contextData = {
         submitApplication,
         loginUser,
         isLogin, 
