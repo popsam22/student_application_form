@@ -1,6 +1,6 @@
-export { default as Navbar} from './navbar/Navbar'
-export { default as Appform} from './appform/Appform'
-export { default as Payment } from './payment/Payment'
-export { default as Footer } from './footer/Footer'
-
+export { default as Navbar} from './Navbar'
+export { default as Appform} from './Appform'
+export { default as Payment } from './Payment'
+export { default as Footer } from './Footer'
+export { default as AdminNav } from './AdminNav'
 

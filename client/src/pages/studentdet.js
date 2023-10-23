@@ -1,0 +1,58 @@
+export const students = [
+    {
+        id: '22356',
+        name:"Aliyu Umar",
+        phone_number:"080343545",
+        email: "aliyu@aliyu.com",
+        dob: '22/33/44',
+        gender: 'male',
+        class: 'ss3',
+        prev_school: 'benveg mont',
+    },
+    {
+        id:'4356',
+        name:"musa Umar",
+        phone_number:"080343545",
+        email: "aliyu@aliyu.com",
+        dob: '22/33/44',
+        gender: 'male',
+        class: 'ss3',
+        prev_school: 'benveg mont',
+    },
+    {
+        id: '43567',
+        name:"Timoty Umar",
+        phone_number:"080343545",
+        email: "aliyu@aliyu.com",
+        dob: '22/33/44',
+        gender: 'male',
+        class: 'ss3',
+        prev_school: 'benveg mont',
+    },
+    {
+        id:'5678', 
+        name:"Garba Tukur",
+        phone_number:"080343545",
+        email: "aliyu@aliyu.com",
+        dob: '22/33/44',
+        gender: 'male',
+        class: 'ss3',
+        prev_school: 'benveg mont',
+    },
+    {
+        id: '90674',
+        name:"Gabriel ag",
+        phone_number:"080343545",
+        email: "aliyu@aliyu.com",
+        dob: '22/33/44',
+        gender: 'male',
+        class: 'ss3',
+        prev_school: 'benveg mont',
+    }
+]
+
+// name: '', dob:'', gender:'',nationality:'',
+//     state:'', religion:'', phone:'', email:'',
+//     disability:'', class:'', prev_school:'',
+//     school_address:'', guardian_name:'',guardian_phone:'',
+//     guardian_address:''
